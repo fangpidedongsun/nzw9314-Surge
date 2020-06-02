@@ -140,8 +140,10 @@ qtt.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts
 # > 米读
 米读cookie = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/midu/midu.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/apiwz\.midukanshu\.com
 # > 多看
-多看cookie = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/www\.duokan\.com\/checkin\/v0\/status 
-
+多看cookie = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/duokan/duokan.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/www\.duokan\.com\/checkin\/v0\/status
+# > 京东618
+JD618.cookie = type=http-request,pattern=^https:\/\/api.m.jd.com\/client.action\?functionId=cakebaker_getHomeData,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jd/jd.618.cookie.js,requires-body=true
+                        
 # 其他
 # > 微博超话 (By NavePnow)
 get_cookie_surge.js = max-size=0,script-path=https://raw.githubusercontent.com/NavePnow/Profiles/master/Scripts/weibo/get_cookie_surge.js,type=http-request,pattern=https:\/\/weibo\.com\/p\/aj\/general\/button\?ajwvr=6&api=http:\/\/i\.huati\.weibo\.com\/aj\/super\/checkin
@@ -161,14 +163,13 @@ tongc_cookie.js = script-path=https://raw.githubusercontent.com/nzw9314/Quantumu
 jddj.js = script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js,type=http-request,pattern=https:\/\/daojia\.jd\.com\/client\?_jdrandom=\d{13}&functionId=%2Fsignin
 # > 电视家
 dianshijia.js = script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js,type=http-request,pattern=http:\/\/act\.gaoqingdianshi\.com\/\/api\/v4\/sign\/signin\?
+电视家 = type=http-request,pattern=http:\/\/api\.gaoqingdianshi\.com\/api\/v2\/cash\/withdrawal\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js
 # > 快手极速版
 kuaishou.js = script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js,type=http-request,pattern=https:\/\/nebula\.kuaishou\.com\/rest\/n\/nebula\/activity\/earn\/overview
 # > 微信小程序 来客有礼
 lkyl.js = script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,type=http-request,pattern=https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\?
 # > 中国电信套餐 (By @uchvk & @Macsuny)
 telecomInfinity.js = script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js,type=http-request,pattern=^https?:\/\/e\.189\.cn\/store\/user\/package_detail\.do
-# > 喜马拉雅极速版 (By @Macsuny)
-xmspeed.js = script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/xmspeed.js,type=http-request,pattern=https:\/\/m\.ximalaya\.com\/speed\/task-center\/account\/coin
 # 微博 (By @Macsuny)
 微博 = script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,type=http-request,pattern=https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid
 # 微博钱包 (By @Macsuny)
@@ -181,9 +182,9 @@ xmspeed.js = script-path=https://raw.githubusercontent.com/Sunert/Scripts/master
 新浪 Cookie2 = script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/sinanews.js,type=http-request,pattern=https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn
 # > 中青看点极速版 (By @Macsuny)
 中青看点cookie = type=http-request,pattern=https:\/\/\w+\.youth\.cn\/TaskCenter\/(sign|getSign),script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js
-中青看点cookie = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/Game\/GameVideoReward,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
 中青看点cookie = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/article\/complete,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
 中青看点cookie = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/article\/red_packet,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
+中青看点cookie = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/user\/app_stay\.json,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, requires-body=true
 # > 楼兰小说论坛 (By @iNotification)
 loulancheck.js = script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/loulancheck.js,type=http-request,pattern=^https:\/\/www\.lltxt\.com/hack\.php\?H_name=qiandao&action=qiandao
 # > 招行信用卡公众号 (By @iNotification)
